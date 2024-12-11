@@ -73,7 +73,7 @@
       "UpstreamHttpMethod": [ "Get", "Update", "Delete" ]
     },
     {
-      "DownstreamPathTemplate": "/api/customers/{email}",
+      "DownstreamPathTemplate": "/api/customers/email/{email}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -81,7 +81,7 @@
           "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/customers/{email}",
+      "UpstreamPathTemplate": "/customers/email/{email}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     {
@@ -110,6 +110,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:5000",
+    "BaseUrl": "http://localhost:5000"
   }
 }

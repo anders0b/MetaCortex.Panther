@@ -10,7 +10,19 @@
         }
       ],
       "UpstreamPathTemplate": "/products",
-      "UpstreamHttpMethod": [ "Get", "Post", "Update", "Delete" ]
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/products/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "metacortex-products",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/products/{id}",
+      "UpstreamHttpMethod": [ "Get", "Update", "Delete" ]
     },
     {
       "DownstreamPathTemplate": "/api/orders",
@@ -22,7 +34,19 @@
         }
       ],
       "UpstreamPathTemplate": "/orders",
-      "UpstreamHttpMethod": [ "Get", "Post", "Update", "Delete" ]
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/orders/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "metacortex-orders",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/orders/{id}",
+      "UpstreamHttpMethod": [ "Get", "Update", "Delete" ]
     },
     {
       "DownstreamPathTemplate": "/api/customers",
@@ -34,7 +58,31 @@
         }
       ],
       "UpstreamPathTemplate": "/customers",
-      "UpstreamHttpMethod": [ "Get", "Post", "Update", "Delete" ]
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/customers/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "metacortex-customers",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/customers/{id}",
+      "UpstreamHttpMethod": [ "Get", "Update", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/customers/{email}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "metacortex-customers",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/customers/{email}",
+      "UpstreamHttpMethod": [ "Get" ]
     },
     {
       "DownstreamPathTemplate": "/api/payments",
@@ -46,11 +94,22 @@
         }
       ],
       "UpstreamPathTemplate": "/payments",
-      "UpstreamHttpMethod": [ "Get", "Post", "Update", "Delete" ]
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/payments/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "metacortex-payments",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/payments/{id}",
+      "UpstreamHttpMethod": [ "Get", "Update", "Delete" ]
     }
   ],
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:5000",
-    "RequestIdKey": "OcRequestId"
   }
 }

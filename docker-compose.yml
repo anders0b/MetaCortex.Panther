@@ -14,6 +14,19 @@ services:
     networks:
       - app-network
 
+  # DeluxeSeeder
+  metacortex-deluxeseeder:
+    image: ghcr.io/anders0b/metacortex-deluxeseeder:latest
+    ports:
+      - "5010:80"
+    depends_on:
+      - metacortex-payments
+      - metacortex-customers
+      - metacortex-orders
+      - metacortex-products
+    networks:
+      - app-network
+
   # Payment
   metacortex-payments:
     image: ghcr.io/heimbrand/metacortex-payments:latest

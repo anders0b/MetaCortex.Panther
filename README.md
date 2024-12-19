@@ -1,17 +1,3 @@
-# Group Project: Microservices
-## Team MetaCortex
-
-This repository is part of a group project where we are developing a distributed application composed of several microservices. Each team member is collectively responsible for an API Gateway, aswell as individually responsible for a specific part of the system:
-
-- MetaCortex.Panther - Maintained by the whole group, contains the Ocelot API Gateway.
-- [MetaCortex.Customers](https://github.com/jesperwhendin/MetaCortex.Customers) - Maintained by [jesperwhendin](https://github.com/jesperwhendin) / Jesper Whendin, responsible for customer management.
-- [MetaCortex.Orders](https://github.com/anders0b/MetaCortex.Orders) - Maintained by [Anders0b](https://github.com/anders0b) / Anders Öberg, responsible for order management.
-- [MetaCortex.Payments](https://github.com/Heimbrand/MetaCortex.Payments) - Maintained by [Heimbrand](https://github.com/Heimbrand) / Olle Heimbrand, responsible for handling payments.
-- [MetaCortex.Products](https://github.com/GabrielRai/MetaCortex.Products) - Maintained by [GabrielRai](https://github.com/GabrielRai) / Gabriel Raimondo, responsible for product information.
-
-Together, these microservices, as well as an API-Gateway, form a complete system where each service has a clear role and responsibility.
-
-
 # API Documentation for MetaCortex.Panther (Ocelot Gateway)
 
 This document provides an overview of the API routes configured in the Ocelot gateway.
